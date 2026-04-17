@@ -229,6 +229,9 @@ class NeurotransmitterUseCases:
         return [
             NeurotransmitterOut(
                 id=n.id, name=n.name, name_ru=n.name_ru, smiles=n.smiles,
+                canonical_smiles=n.canonical_smiles,
+                murcko_scaffold=n.murcko_scaffold,
+                generic_scaffold=n.generic_scaffold,
                 molecular_formula=n.molecular_formula, molecular_weight=n.molecular_weight,
                 logp=n.logp, tpsa=n.tpsa, h_bond_donors=n.h_bond_donors,
                 h_bond_acceptors=n.h_bond_acceptors, rotatable_bonds=n.rotatable_bonds,
@@ -269,6 +272,9 @@ class NeurotransmitterUseCases:
 
         return NeurotransmitterDetailOut(
             id=nt.id, name=nt.name, name_ru=nt.name_ru, smiles=nt.smiles,
+            canonical_smiles=nt.canonical_smiles,
+            murcko_scaffold=nt.murcko_scaffold,
+            generic_scaffold=nt.generic_scaffold,
             molecular_formula=nt.molecular_formula, molecular_weight=nt.molecular_weight,
             logp=nt.logp, tpsa=nt.tpsa, h_bond_donors=nt.h_bond_donors,
             h_bond_acceptors=nt.h_bond_acceptors, rotatable_bonds=nt.rotatable_bonds,

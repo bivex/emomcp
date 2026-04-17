@@ -62,6 +62,7 @@ class TestNeurotransmitterEntity:
     def _make_nt(self, mw=176.0) -> Neurotransmitter:
         return Neurotransmitter(
             id=1, name="Serotonin", name_ru="Серотонин", smiles="C1=CC",
+            canonical_smiles=None, murcko_scaffold=None, generic_scaffold=None,
             molecular_formula="C10H12N2O", molecular_weight=mw,
             logp=1.37, tpsa=62.0, h_bond_donors=3, h_bond_acceptors=2,
             rotatable_bonds=2, aromatic_rings=2, fraction_csp3=0.2,

@@ -31,6 +31,9 @@ class NeurotransmitterOut(BaseModel):
     name: str
     name_ru: str
     smiles: str
+    canonical_smiles: str | None
+    murcko_scaffold: str | None
+    generic_scaffold: str | None
     molecular_formula: str
     molecular_weight: float
     logp: float

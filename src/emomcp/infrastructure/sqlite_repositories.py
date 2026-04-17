@@ -151,6 +151,9 @@ class SqliteNeurotransmitterRepository(NeurotransmitterRepository):
     def _to_entity(r: sqlite3.Row) -> Neurotransmitter:
         return Neurotransmitter(
             id=r["id"], name=r["name"], name_ru=r["name_ru"], smiles=r["smiles"],
+            canonical_smiles=r["canonical_smiles"],
+            murcko_scaffold=r["murcko_scaffold"],
+            generic_scaffold=r["generic_scaffold"],
             molecular_formula=r["molecular_formula"], molecular_weight=r["molecular_weight"],
             logp=r["logp"], tpsa=r["tpsa"], h_bond_donors=r["h_bond_donors"],
             h_bond_acceptors=r["h_bond_acceptors"], rotatable_bonds=r["rotatable_bonds"],
