@@ -7,15 +7,15 @@ Emotions, neurochemistry & marketing funnel database with MCP server and HTTP AP
 ## What's inside
 
 - 260 emotions (174 base + 36 marketing + 50 unique/cultural) with valence, activation, approach/avoidance
-- 12 neurotransmitters (Serotonin, Dopamine, Adrenaline, Norepinephrine, GABA, Glutamate, Acetylcholine, PEA, Oxytocin, Vasopressin, Cortisol, Testosterone) with SMILES, molecular descriptors, PubChem data
-- 88 Tanimoto molecular similarities between neurotransmitters
+- 12 neurotransmitters with SMILES, canonical SMILES, Murcko scaffolds, molecular descriptors, PubChem data
+- 66 Tanimoto molecular similarities (full pairwise matrix, radius 2 & 3)
 - 8 biosynthetic pathways (PEA→Dopamine→Norepinephrine→Adrenaline, Glutamate↔GABA, etc.)
 - 298 emotion-neurotransmitter weighted links (positive/negative)
 - 8-stage marketing funnel (awareness → interest → desire → trust → action → retention → advocacy → reactivation)
-- 70 funnel emotion strategies with effectiveness scores
-- 92 emotion-channel fits across 15 marketing channels
-- 65 trigger word sets (Russian + English) with power scores
-- 51 CTA patterns with urgency levels and conversion lift
+- 98 funnel emotion strategies with effectiveness scores
+- 132 emotion-channel fits across 15 marketing channels
+- 95 trigger word sets (Russian + English) with power scores
+- 75 CTA patterns with urgency levels and conversion lift
 - 12 color psychology entries by stage and industry
 - 7 buyer archetypes based on dominant neurotransmitter profiles
 - 8 pre-built funnel templates with 33 steps across verticals
