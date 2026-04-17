@@ -342,6 +342,22 @@ def list_colors(stage: str | None = None, industry: str | None = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Health
+# ---------------------------------------------------------------------------
+
+@mcp.tool()
+def health_check() -> str:
+    """Check database status: connected tables and row counts."""
+    import sqlite3
+    conn = sqlite3.connect(DB_PATH)
+    tables: dict[str, int] = {}
+    for (name,) in conn.execute("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"):
+        tables[name] = conn.execute(f"SELECT COUNT(*) FROM [{name}]").fetchone()[0]
+    conn.close()
+    return json.dumps({"status": "ok", "tables": tables}, ensure_ascii=False, indent=2)
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
